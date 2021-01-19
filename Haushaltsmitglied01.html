@@ -35,7 +35,7 @@
 			<p style="color:#0040FF"> Opfer nationalsozialistischer Verfolgung</p>
 			<p style="color:#0040FF"> Werbungskosten</p>
 		</div>
-		<div class="center">
+		<div class="center" id="targetcontent">
 			<p>Wird ein Einkommen bezogen?</p>
 			<label for="text1">Um welche Art von Einkommen handelt es sich?</label><br>
 			<input id="text1" type="text" placeholder="Bitte wählen"/><br><br>
@@ -44,9 +44,10 @@
 			<p>Bitte laden Sie einen Einkommensnachweis hoch:</p><br>
 			<button class="medium grey"> Wählen Sie.. </button><br><br>	
 			<p> + Weiteres Einkommen hinzufügen</p>		
-			<button class="medium red"> Speichern & weiter </button>
+			<button class="medium red partitial-load" data-target="#targetcontent" data-href="partitial/otherform.html"> Speichern & weiter </button>
 		</div>
 	</div>
 </div> <!-- End Grid -->
+<script type="text/javascript" src="js/partitialload.js"></script>
 </body>
 </html>

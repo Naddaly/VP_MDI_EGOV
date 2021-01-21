@@ -1,46 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- META -->
-	<title>Kommune</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="description" content="" />
-	
-	<!-- CSS -->
+	<title>Title</title>
+
 	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="style.css" media="all" /> 
-	
-	<!-- Javascript -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/kickstart.js"></script>
-
-	
 </head>
 <body>
 <div class="grid">
-	<div class="col_12" style="margin-top:100px;">
-		<h2 class="left">Bevor wir starten..</h2>
-		<h6 style="margin-bottom:40px;" class="left">
-			Wohngeld als Zuschuss zur Miete wird gewährt, wenn: </h6>
+	<div class="col_3 hide-tablet">
 
-		<!-- Unordered List -->
-		<ul>
-	<li>Sie eine Wohnung oder ein Zimmer mieten.</li>
-	<li>Sie Wohnraum im eigenen Mehrfamilienhaus bewohnen.</li>
-	<li>Sie über Nachweise verfügen und diese entweder direkt digital (in den Formaten PDF oder JPG) oder später per Post übermitteln.</li>
-	<li>Unter anderem benötigen Sie z.B. Nachweise zu Ihrem Mietverhältnis sowie Ihrem Einkommen.</li>
-	</ul>	
-
-	<p>Achtung:</p><br>
-	<p>Zur Zeit kann der Dients nur genutzt werden, wenn Sie in einer der unten auswählbaren Kommunen wohnen.
-		In allen anderen Fällen wenden Sie sich bitte an Ihre zuständige Wohngeldstelle Ihrer Kommune.
-	</p><br>
-	<!-- Placeholder Text -->
-	<label for="text1">In welcher Gemeinde liegt die Wohnung, für die Sie einen Antrag auf WOhngeld stellen?</label><br>
-	<input id="text1" type="text" placeholder="Lübeck" /> <br><br>
-	<button class="medium red"> Weiter </button>
 	</div>
-</div> <!-- End Grid -->
+	<div class="col_6 main-content">
+		<div id="targetcontent">
+			Startseite Kommune?
+			<!-- Hier muss der Link angepasst werden -->
+			<button class="medium red partitial-load" data-target="#targetcontent" data-href="partitial/otherform.html"> Speichern & weiter </button>
+		</div>
+	</div>
+	<div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
+</div>
+
+<script type="text/javascript" src="js/partitialload.js"></script>
 </body>
 </html>

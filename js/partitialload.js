@@ -15,7 +15,6 @@ function initializePartitialLoad(){
     
 }
 
-
 window.onload = function(){
     initializePartitialLoad();
 }

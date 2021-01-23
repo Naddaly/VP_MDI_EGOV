@@ -4,40 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/framework-style.css" media="all"/>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/kickstart.js"></script>
+    <script type="text/javascript" src="js/partitialload.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
 </head>
 <body>
-<div class="grid">
-    <div class="col_3 hide-tablet">
-        <ul class="alt hide-tablet hide-phone">
-            <li><a href="">Adresse der Wohnung</a></li>
-            <li><a href="">Wohngeld für andere Wohnung</a></li>
-            <li><a href="">Wohnform</a></li>
-            <li><a href="">Nicht-Haushaltsmitglieder</a></li>
-            <li><a href="">Sterbefall</a></li>
-            <li><a href="">Wohnungsgröße</a></li>
-            <li><a href="">Gesamtkosten</a></li>
-            <li><a href="">Nebenkosten</a></li>
-            <li><a href="">Mietminderung</a></li>
-            <li><a href="">Mietzuschuss</a></li>
-            <li><a href="">Gewerbliche Nutzung</a></li>
-
-        </ul>
-    </div>
-    <div class="col_6 main-content">
-        <div id="targetcontent">
-            Startseite Ihre Wohnung
-            <!-- Hier muss der Link angepasst werden -->
-            <button class="medium red partitial-load" data-target="#targetcontent" data-href="partitial/otherform.html"> Speichern & weiter </button>
+    <div class="grid">
+        <div class="col_3 hide-tablet">
+            <ul class="alt hide-tablet hide-phone">
+                <li class="navitem active partitial-load" id="wmenu01" ><a href="Haushaltsmitglied.html">Adresse der Wohnung</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html" id="wmenu02"><a href="#wmenu02">Wohngeld für andere Wohnung</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied03.html" id="wmenu03"><a href="#wmenu03">Wohnform</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied04.html" id="wmenu04"><a href="#wmenu04">Nicht-Haushaltsmitglieder</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied05.html" id="wmenu05"><a href="#wmenu05">Sterbefall</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied06.html" id="wmenu06"><a href="#wmenu06">Wohnungsgröße</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied07.html" id="wmenu07"><a href="#wmenu07">Gesamtkosten</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied08.html" id="wmenu08"><a href="#wmenu08">Nebenkosten</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied09.html" id="wmenu09"><a href="#wmenu09">Mietminderung</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied10.html" id="wmenu10"><a href="#wmenu10">Mietzuschuss</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied11.html" id="wmenu11"><a href="#wmenu11">Gewerbliche Nutzung</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
-</div>
+        <div class="col_6 main-content">
+            <div id="targetcontent">
+                <div class="left">
 
-<script type="text/javascript" src="js/partitialload.js"></script>
+                    <p>Für welche Wohnung beantragen Sie Wohngeld?</p>
+                    <input type="checkbox" id="check1" />
+                    <label for="check1" class="inline">
+                        Ich bestätige, dass ich meinen Lebensmittelpunkt in der Wohnung habe oder haben werde, für die ich Wohngeld beantrage.</label><br><br>
+                    <div class="grid">
+                        <div class= "col_12">
+                            <label for="text1">Straße</label><br>
+                            <input id="text1" type="text" />
+                        </div>
+                        <div class = "col_6">
+                            <label for="text2">Hausnummer</label><br>
+                            <input id="text2" type="text" />
+                        </div>
+                        <div class = "col_6">
+                            <label for="text3">Zusatz <span>Optional</span></label><br>
+                            <input id="text3" type="text" />
+                        </div> <br>
+                        <div class = "col_6">
+                            <label for="text4">Postleitzahl</label><br>
+                            <input id="text4" type="text" />
+                        </div>
+                        <div class = "col_6">
+                            <label for="text5">Wohnort </label><br>
+                            <input id="text5" type="text" />
+                        </div><br>
+                        <div class = "col_12">
+                            <label for="text6">Adresszusatz <span>Optional</span></label><br>
+                            <input id="text6" type="text" />
+                        </div> <br>
+                        <div class="col_12">
+                            <input type="checkbox" id="check2" />
+                            <label for="check2" class="inline">
+                                Ich wohne nicht in dieser Wohnung.</label><br><br>
+                        </div>
+                        <button class="medium red partitial-load" data-target="#targetcontent" data-nav="wmenu02" data-href="partitial/IhreWohnung/IhreWohnung02.html"> Speichern & weiter </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
+    </div>
+
 </body>
 </html>

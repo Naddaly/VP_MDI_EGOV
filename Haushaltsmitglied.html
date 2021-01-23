@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/framework-style.css" media="all"/>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/kickstart.js"></script>
+    <script type="text/javascript" src="js/partitialload.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
 </head>
 <body>
-<div class="grid">
-    <div class="col_3 hide-tablet">
-        <ul class="alt hide-tablet hide-phone">
-            <li><a href="">Einkommen</a></li>
-            <li><a href="">Abgaben</a></li>
-            <li><a href="">Unterhaltsanspruch</a></li>
-            <li><a href="">Kinder ohne Kindergeld</a></li>
-            <li><a href="">Veränderung der Einnahmen</a></li>
-            <li><a href="">Einmaliges Einkommen</a></li>
-            <li><a href="">Vermögen</a></li>
-            <li><a href="">Erhalt von Sozialleistungen</a></li>
-            <li><a href="">Schwerbehinderung/ Pflegebedürftigkeit</a></li>
-            <li><a href="">Unterhaltszahlung</a></li>
-            <li><a href="">Opfer nationalsozialistischer Verfolgung</a></li>
-            <li><a href="">Werbungskosten</a></li>
-
-        </ul>
-    </div>
-    <div class="col_6 main-content">
-        <div id="targetcontent">
-            Startseite Haushaltsmitglied
-            <!-- Hier muss der Link angepasst werden -->
-            <button class="medium red partitial-load" data-target="#targetcontent" data-href="partitial/otherform.html"> Speichern & weiter </button>
+    <div class="grid">
+        <div class="col_3 hide-tablet">
+            <ul class="alt hide-tablet hide-phone">
+                <li class="navitem active partitial-load" id="hmmenu01" ><a href="Haushaltsmitglied.html">Einkommen</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html" id="hmmenu02"><a href="#hmmenu02">Abgaben</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied03.html" id="hmmenu03"><a href="#hmmenu03">Unterhaltsanspruch</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied04.html" id="hmmenu04"><a href="#hmmenu04">Kinder ohne Kindergeld</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied05.html" id="hmmenu05"><a href="#hmmenu05">Veränderung der Einnahmen</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied06.html" id="hmmenu06"><a href="#hmmenu06">Einmaliges Einkommen</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied07.html" id="hmmenu07"><a href="#hmmenu07">Vermögen</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied08.html" id="hmmenu08"><a href="#hmmenu08">Erhalt von Sozialleistungen</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied09.html" id="hmmenu09"><a href="#hmmenu09">Schwerbehinderung/ Pflegebedürftigkeit</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied10.html" id="hmmenu10"><a href="#hmmenu10">Unterhaltszahlung</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied11.html" id="hmmenu11"><a href="#hmmenu11">Opfer nationalsozialistischer Verfolgung</a></li>
+                <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied12.html" id="hmmenu12"><a href="#hmmenu12">Werbungskosten</a></li>
+            </ul>
         </div>
+        <div class="col_6 main-content">
+            <div id="targetcontent">
+                <div class="left">
+                    <p>Wird ein Einkommen bezogen?</p>
+                    <label for="text1">Um welche Art von Einkommen handelt es sich?</label><br>
+                    <input id="text1" type="text" placeholder="Bitte wählen"/><br><br>
+                    <label for="text2">Höhe des Einkommens pro Monat (Brutto, in €)</label><br>
+                    <input id="text2" type="text" /><br><br>
+                    <p>Bitte laden Sie einen Einkommensnachweis hoch:</p><br>
+                    <button class="medium grey"> Wählen Sie.. </button><br><br>
+                    <p> + Weiteres Einkommen hinzufügen</p>
+                    <button class="medium red partitial-load" data-target="#targetcontent" data-nav="hmmenu02" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html">Speichern & weiter</button>
+                </div>
+            </div>
+        </div>
+        <div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
     </div>
-    <div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
-</div>
 
-<script type="text/javascript" src="js/partitialload.js"></script>
 </body>
 </html>

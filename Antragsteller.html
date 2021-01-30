@@ -12,15 +12,17 @@
     <script type="text/javascript" src="js/kickstart.js"></script>
     <script type="text/javascript" src="js/partitialload.js"></script>
     <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/quizcheck.js"></script>
+
 </head>
 <body>
     <header class="center">
         <h1>Wohngeld beantragen</h1>
     </header>
-    <div class="grid">
-        <div class="col_3 hide-tablet">
+    <div class="grid main">
+        <div class="col_2 hide-tablet">
             <ul class="alt hide-tablet hide-phone">
-                <li class="navitem active partitial-load" id="amenu01" ><a href="Haushaltsmitglied.html">Persönliche Informationen des Antragsstellers</a></li>
+                <li class="navitem active partitial-load" id="amenu01" ><a href="Antragsteller.html">Persönliche Informationen des Antragsstellers</a></li>
                 <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html" id="amenu02"><a href="#amenu02">Weitere Haushaltsmitglieder</a></li>
 
             </ul>
@@ -57,7 +59,47 @@
                 </div>
             </div>
         </div>
-        <div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
+        <div class="col_4 micro-learning">
+            <div id="microtarget">
+                <div class="microcontent">
+                    <div class="grid">
+                        <div class="col_12"><h6>Wissen Sie eigentlich, was alles sogenannte 'Personenbezogene Daten' sind?</h6></div>
+                        <div class="col_8"></div>
+                        <div class="col_2">Ja</div>
+                        <div class="col_2">Nein</div>
+
+                        <div class="col_8">Meine Passdaten (Name, Geburtsdatum, Adresse, etc.)</div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz1-1" name="quiz1"></div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz1-2" name="quiz1"></div>
+
+                        <div class="col_8">Mein Lieblingsrestaurant</div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz2-1" name="quiz2"></div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz2-2" name="quiz2"></div>
+
+                        <div class="col_8">Meine IP-Adresse</div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz3-1" name="quiz3"></div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz3-2" name="quiz3"></div>
+
+                        <div class="col_8">Meine Bankdaten</div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz4-1" name="quiz4"></div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz4-2" name="quiz4"></div>
+
+                        <div class="col_8">Meine Grundschule</div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz5-1" name="quiz5"></div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz5-2" name="quiz5"></div>
+
+                        <div class="col_8">Meine physischen Merkmale (Größe, Hautfarbe, Augenfarbe, etc.)</div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz6-1" name="quiz6"></div>
+                        <div class="col_2"><input class="radiobox" type="radio" id="quiz6-2" name="quiz6"></div>
+
+                        <div class="col_12">
+                            <button class="medium green partitial-load" data-target="#microtarget" data-href="partitial/Micro-Learning/personenbezogenWusstenSie.html" onclick="evaluatequiz()">Auswerten</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

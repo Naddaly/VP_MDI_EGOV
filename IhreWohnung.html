@@ -17,8 +17,8 @@
     <header class="center">
         <h1>Wohngeld beantragen</h1>
     </header>
-    <div class="grid">
-        <div class="col_3 hide-tablet">
+    <div class="grid main">
+        <div class="col_2 hide-tablet">
             <ul class="alt hide-tablet hide-phone">
                 <li class="navitem active partitial-load" id="wmenu01" ><a href="Haushaltsmitglied.html">Adresse der Wohnung</a></li>
                 <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html" id="wmenu02"><a href="#wmenu02">Wohngeld für andere Wohnung</a></li>
@@ -33,51 +33,61 @@
                 <li class="navitem partitial-load" data-target="#targetcontent" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied11.html" id="wmenu11"><a href="#wmenu11">Gewerbliche Nutzung</a></li>
             </ul>
         </div>
-        <div class="col_6 main-content">
-            <div id="targetcontent">
-                <div class="left">
-                    <h3 class="left">Adresse der Wohnung</h3>
-                    <p>Für welche Wohnung beantragen Sie Wohngeld?</p>
-                    <input type="checkbox" id="check1" />
-                    <label for="check1" class="inline">
-                        Ich bestätige, dass ich meinen Lebensmittelpunkt in der Wohnung habe oder haben werde, für die ich Wohngeld beantrage.</label><br><br>
-                    <div class="grid">
-                        <div class= "col_12">
-                            <label for="text1">Straße</label><br>
-                            <input id="text1" type="text" />
+            <div class="col_6 main-content">
+                <div id="targetcontent">
+                    <div class="left">
+                        <h3 class="left">Adresse der Wohnung</h3>
+                        <p>Für welche Wohnung beantragen Sie Wohngeld?</p>
+                        <input type="checkbox" id="check1" />
+                        <label for="check1" class="inline">
+                            Ich bestätige, dass ich meinen Lebensmittelpunkt in der Wohnung habe oder haben werde, für die ich Wohngeld beantrage.</label><br><br>
+                        <div class="grid">
+                            <div class= "col_12">
+                                <label for="text1">Straße</label><br>
+                                <input id="text1" type="text" />
+                            </div>
+                            <div class = "col_6">
+                                <label for="text2">Hausnummer</label><br>
+                                <input id="text2" type="text" />
+                            </div>
+                            <div class = "col_6">
+                                <label for="text3">Zusatz <span>Optional</span></label><br>
+                                <input id="text3" type="text" />
+                            </div> <br>
+                            <div class = "col_6">
+                                <label for="text4">Postleitzahl</label><br>
+                                <input id="text4" type="text" />
+                            </div>
+                            <div class = "col_6">
+                                <label for="text5">Wohnort </label><br>
+                                <input id="text5" type="text" />
+                            </div><br>
+                            <div class = "col_12">
+                                <label for="text6">Adresszusatz <span>Optional</span></label><br>
+                                <input id="text6" type="text" />
+                            </div> <br>
+                            <div class="col_12">
+                                <input type="checkbox" id="check2" />
+                                <label for="check2" class="inline">
+                                    Ich wohne nicht in dieser Wohnung.</label><br><br>
+                            </div>
+                            <button class="medium red partitial-load" data-target="#targetcontent" data-nav="wmenu02" data-href="partitial/IhreWohnung/IhreWohnung02.html"> Speichern & weiter </button>
                         </div>
-                        <div class = "col_6">
-                            <label for="text2">Hausnummer</label><br>
-                            <input id="text2" type="text" />
-                        </div>
-                        <div class = "col_6">
-                            <label for="text3">Zusatz <span>Optional</span></label><br>
-                            <input id="text3" type="text" />
-                        </div> <br>
-                        <div class = "col_6">
-                            <label for="text4">Postleitzahl</label><br>
-                            <input id="text4" type="text" />
-                        </div>
-                        <div class = "col_6">
-                            <label for="text5">Wohnort </label><br>
-                            <input id="text5" type="text" />
-                        </div><br>
-                        <div class = "col_12">
-                            <label for="text6">Adresszusatz <span>Optional</span></label><br>
-                            <input id="text6" type="text" />
-                        </div> <br>
-                        <div class="col_12">
-                            <input type="checkbox" id="check2" />
-                            <label for="check2" class="inline">
-                                Ich wohne nicht in dieser Wohnung.</label><br><br>
-                        </div>
-                        <button class="medium red partitial-load" data-target="#targetcontent" data-nav="wmenu02" data-href="partitial/IhreWohnung/IhreWohnung02.html"> Speichern & weiter </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col_3 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
-    </div>
+            <div class="col_4 micro-learning"><div class="didyouknow">
+                <div class="grid">
+                    <h6>Mit wem teilen Sie Ihre Daten eigentlich?</h6>
 
+                    Ihre Personenbezogenen Daten werden nur an Dritte weitergegeben, wenn
+                    <ul>
+                        <li>Sie dem zugestimmt haben (z.B. Krankenkasse, Rentenversicherung</li>
+                        <li>Oder die Weitergabe gesetzlich zugelassen ist (z.B. an ...)</li>
+                    </ul>
+
+                </div>
+            </div></div>
+    </div>
 </body>
 </html>

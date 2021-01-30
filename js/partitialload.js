@@ -1,4 +1,3 @@
-
 function initializePartitialLoad(){
     $(".partitial-load").unbind("click");
 

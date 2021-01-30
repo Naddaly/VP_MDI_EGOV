@@ -1,3 +1,7 @@
 .active{
-    background-color: #ffc9bd !important;
+    background-color: #ffb6c1 !important;
+}
+
+.micro-learning .grid{
+    padding: 0;
 }

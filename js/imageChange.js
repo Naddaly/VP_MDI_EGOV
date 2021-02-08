@@ -1,14 +1,33 @@
 var index = 0;
 
-function loadImage(){
+function loadImage(indexChange){
+
     if(index == 0){
-        $("#imagetarget").prop("src", "media/AusweisApp/AusweisApp_Wo.png");
+        if(indexChange == 1) {
+            $("#imagetarget").prop("src", "media/AusweisApp/AusweisApp_Wo.png");
+            $("#tutorialbackwardbutton").removeClass("hide");
+            index++;
+        }
     }else if(index == 1){
-        $("#imagetarget").prop("src", "media/AusweisApp/AusweisApp_Wie.png");
+        if(indexChange == 1){
+            $("#imagetarget").prop("src", "media/AusweisApp/AusweisApp_Wie.png");
+            $("#tutorialforwardbutton").addClass("hide");
+            index++;
+        }else if(indexChange == -1){
+            $("#imagetarget").prop("src", "media/AusweisApp/AusweisApp_Was.png");
+            $("#tutorialbackwardbutton").addClass("hide");
+            index--;
+        }
     }else{
-        $("#imagetarget").prop("class", "hide");
-        $("#tutorialbutton").prop("class", "hide");
-        $("#loginbutton").html("Anmelden");
+        if(indexChange == 1){
+            $("#imagetarget").prop("class", "hide");
+            $("#loginbutton").html("Anmelden");
+        }else if(indexChange == -1){
+            $("#imagetarget").prop("src", "media/AusweisApp/AusweisApp_Wo.png");
+            $("#tutorialforwardbutton").removeClass("hide");
+            index--;
+        }
+        
     }
-    index++;
+    
 }

@@ -7,7 +7,6 @@ function evaluatequiz(){
         if($(this).prop("checked")){
             rightAnswers++;
         }
-    
-    
+        
     });
 }

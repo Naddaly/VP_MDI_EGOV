@@ -11,8 +11,10 @@ function initializePartitialLoad(){
         
         if(!$(this).hasClass("disable-require")){
             $("input[type=text].required").each(function(){
-                if($(this).val().trim() == ""){
-                    missing_fields.push("Bitte das Feld "+$(this).data("required-name")+" ausfüllen!")
+                let element = this;
+                
+                if($(element).val().trim() === ""){
+                    missing_fields.push("Bitte das Feld "+$(element).data("required-name")+" ausfüllen!")
                 }
         
             });

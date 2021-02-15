@@ -12,6 +12,8 @@
     <script type="text/javascript" src="js/kickstart.js"></script>
     <script type="text/javascript" src="js/partitialload.js"></script>
     <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/autofill.js"></script>
+
 </head>
 <body>
     <header class="center">
@@ -40,17 +42,19 @@
                     <h3 class="left">Einkommen</h3>
                     <p>Wird ein Einkommen bezogen?</p>
                     <label for="text1">Um welche Art von Einkommen handelt es sich?</label><br>
-                    <input id="text1" type="text" placeholder="Bitte wählen"/><br><br>
+                    <input class="fillme required" name="income_type" data-required-name="Art des Einkommens" id="text1" type="text" placeholder="Bitte wählen"/><br><br>
                     <label for="text2">Höhe des Einkommens pro Monat (Brutto, in €)</label><br>
-                    <input id="text2" type="text" /><br><br>
+                    <input class="fillme required" name="income_value" data-required-name="Höhe des Einkommens" id="text2" type="text" /><br><br>
                     <p>Bitte laden Sie einen Einkommensnachweis hoch:</p><br>
                     <button class="medium grey"> Wählen Sie.. </button><br><br>
                     <p> + Weiteres Einkommen hinzufügen</p>
-                    <button class="medium red partitial-load" data-target="#targetcontent" data-nav="hmmenu02" data-alert="Bitte füllen Sie jetzt den dritten Teil der Evaluation. Sie können die Website schließen" data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html">Speichern & weiter</button>
+                    <button class="medium red partitial-load" data-target="#targetcontent" data-nav="hmmenu02" data-alert="Bitte füllen Sie jetzt die Evaluation. Sie können die Website schließen." data-href="partitial/Haushaltsmitglied/Haushaltsmitglied02.html">Speichern & weiter</button>
                 </div>
             </div>
         </div>
+        <div class="col_4 micro-learning">
+            <video width="100%" controls src="media/Datenschutz_UT.mp4" ></video>
+        </div>
     </div>
-
 </body>
 </html>

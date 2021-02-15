@@ -9,7 +9,9 @@ let filldata = {
     "family_status": "ledig",
     "gender": "männlich",
     "phone_number": "0123456789",
-    "occupation": "Student"
+    "occupation": "Student",
+    "income_type": "Demoeinkommen",
+    "income_value": "Demowert"
 };
 
 function initalizeAutofill(){

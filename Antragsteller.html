@@ -13,6 +13,8 @@
     <script type="text/javascript" src="js/partitialload.js"></script>
     <script type="text/javascript" src="js/navigation.js"></script>
     <script type="text/javascript" src="js/quizcheck.js"></script>
+    <script type="text/javascript" src="js/autofill.js"></script>
+
 
 </head>
 <body>
@@ -20,10 +22,6 @@
         <h1>Wohngeld beantragen</h1>
     </header>
     <div class="grid main">
-        <div class="col_12 center">
-            <a class="button medium blue" href="Kommune.html">Zurück zu Kommune</a>
-            <a class="button medium blue" href="IhreWohnung.html">Weiter zu Ihre Wohnung</a>
-        </div>
         <div class="col_2 hide-tablet">
             <ul class="alt hide-tablet hide-phone">
                 <li class="navitem active partitial-load" id="amenu01" ><a href="Antragsteller.html">Persönliche Informationen des Antragsstellers</a></li>
@@ -36,30 +34,30 @@
                 <div class="left">
                     <h3 class="left">Persönliche Informationen des Antragstellers</h3>
                     <label for="text1">Vorname</label><br>
-                    <input id="text1" type="text" /><br><br>
+                    <input class="fillme required" name="first_name" data-required-name="Vorname" id="text1" type="text" /><br><br>
                     <label for="text2">Name</label><br>
-                    <input id="text2" type="text" /><br><br>
+                    <input class="fillme required" name="last_name" data-required-name="Name" id="text2" type="text" /><br><br>
                     <label for="text3">Geburtsname<span>Optional</span></label><br>
-                    <input id="text3" type="text" /><br><br>
+                    <input class="fillme" name="birth_name" id="text3" type="text" /><br><br>
                     <label for="text4">Geburtsdatum</label><br>
-                    <input id="text4" type="text" /><br><br>
+                    <input class="fillme required" name="birth_date" data-required-name="Geburstag" id="text4" type="text" /><br><br>
                     <label for="text5">Geburtsort</label><br>
-                    <input id="text5" type="text" /><br><br>
+                    <input class="fillme required" name="birth_place" data-required-name="Geburtsort" id="text5" type="text" /><br><br>
                     <label for="text6">Staatsangehörigkeit</label><br>
-                    <input id="text6" type="text" placeholder="Bitte wählen"/><br><br>
+                    <input class="fillme required" name="citizenship" data-required-name="Staatsangehörigkeit" id="text6" type="text" placeholder="Bitte wählen"/><br><br>
                     <p>Bitte laden Sie einen Nachweis Ihrer Nationalität hoch:</p><br>
                     <button class="medium grey"> Wählen Sie.. </button><br><br>
                     <label for="text7">Familienstand</label><br>
-                    <input id="text7" type="text" placeholder="Bitte auswählen"/><br><br>
+                    <input class="fillme required" name="family_status" data-required-name="Familienstand" id="text7" type="text" placeholder="Bitte auswählen"/><br><br>
                     <label for="text8">Geschlecht</label><br>
-                    <input id="text8" type="text" placeholder="Bitte auswählen"/><br><br>
+                    <input class="fillme required" name="gender" data-required-name="Geschlecht" id="text8" type="text" placeholder="Bitte auswählen"/><br><br>
                     <label for="text9">Telefonnummer<span>Optional</span></label><br>
-                    <input id="text9" type="text"/><br><br>
+                    <input class="fillme" name="phone_number" id="text9" type="text"/><br><br>
                     <label for="text10">E-Mail</label><br>
                     <input id="text10" type="text" placeholder="meine.email@home.de" disabled="disabled"/><br><br>
                     <label for="text11">Ausgeübte Tätigkeit</label><br>
-                    <input id="text11" type="text" placeholder="Bitte auswählen"/><br><br>
-                    <button class="medium red partitial-load" data-target="#targetcontent" data-nav="amenu02" data-href="partitial/Antragsteller/Antragsteller02.html">Speichern & weiter</button>
+                    <input class="fillme required" name="occupation" data-required-name="Ausgeübte Tätigkeit" id="text11" type="text" placeholder="Bitte auswählen"/><br><br>
+                    <button class="medium red partitial-load" data-target="#targetcontent" data-nav="amenu02" data-alert="Bitte füllen Sie jetzt den ersten Teil der Evaluation aus und klicken anschließend auf 'OK'" data-href="partitial/Antragsteller/Antragsteller02.html">Speichern & weiter</button>
                 </div>
             </div>
         </div>
@@ -97,7 +95,7 @@
                         <div class="col_2"><input class="radiobox" type="radio" id="quiz6-2" name="quiz6"></div>
 
                         <div class="col_12">
-                            <button class="medium green partitial-load" data-target="#microtarget" data-href="partitial/Micro-Learning/personenbezogenWusstenSie.html" onclick="evaluatequiz()">Auswerten</button>
+                            <button class="medium green partitial-load disable-require" data-target="#microtarget" data-href="partitial/Micro-Learning/personenbezogenWusstenSie.html" onclick="evaluatequiz()">Auswerten</button>
                         </div>
 
                     </div>

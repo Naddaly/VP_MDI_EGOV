@@ -11,16 +11,13 @@
 	<script type="text/javascript" src="js/kickstart.js"></script>
 	<script type="text/javascript" src="js/partitialload.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+	<script type="text/javascript" src="js/autofill.js"></script>
 </head>
 <body>
 	<header class="center">
 		<h1>Wohngeld beantragen</h1>
 	</header>
 	<div class="grid main">
-		<div class="col_12 center">
-			<a class="button medium blue" href="startseite.html">Zurück zur Startseite</a>
-			<a class="button medium blue" href="Antragsteller.html">Weiter zu Antragsteller</a>
-		</div>
 		<div class="col_8">
 			<h3 class="left">Bevor wir starten..</h3>
 			<h6 style="margin-bottom:40px;" class="left">
@@ -39,10 +36,9 @@
 			</p><br>
 			<!-- Placeholder Text -->
 			<label for="text1">In welcher Gemeinde liegt die Wohnung, für die Sie einen Antrag auf WOhngeld stellen?</label><br>
-			<input id="text1" type="text" placeholder="Lübeck" /> <br><br>
+			<input id="text1" class="fillme required" name="gemeinde" date-required-name="Gemeinde" type="text" placeholder="Lübeck" /> <br><br>
 			<a class="button medium red" data-nav="amenu01" href="Antragsteller.html">Speichern & Weiter</a>
 		</div>
-		<div class="col_4 micro-learning">Hier kommt Micro-Learning Content rein und dieser Text ist extra lang, um zu sehen, wann die Zeile umbricht</div>
 	</div>
 </body>
 </html>

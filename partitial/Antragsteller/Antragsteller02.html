@@ -1,11 +1,16 @@
 <div class="left">
 	<h3 class="left">Weitere Haushaltsmitglieder</h3>
 	<p>Wohnt bei Ihnen eine weitere Person, die Haushaltsmitglied ist?</p>
-	<input type="radio" name="radio" id="radio1" />
+	<input type="radio" class="required" name="radio" data-required-name="Weitere Haushaltsmitglieder" id="radio1" />
 	<label for="radio1" class="inline">Ja</label><br>
-	<input type="radio" name="radio" id="radio2" />
+	<input type="radio" class="required" name="radio"  data-required-name="Weitere Haushaltsmitglieder" id="radio2" />
 	<label for="radio2" class="inline">Nein</label><br>
 	<a class="button medium grey" data-nav="amenu01" href="Antragsteller.html">Zurück</a>
-	<a class="button medium red" data-nav="wmenu01" href="IhreWohnung.html">Speichern & Weiter</a>
+	<button class="medium red partitial-load" data-target="_blank" data-alert="Bitte füllen Sie jetzt den zweiten Teil der Evaluation aus und klicken anschließend auf 'OK'" data-href="Haushaltsmitglied.html">Speichern & Weiter</button>
+
 </div>
+<script type="text/javascript">
+	initializePartitialLoad();
+	initalizeAutofill();
+</script>
 
